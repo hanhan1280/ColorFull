@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@drawable/popup">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical50"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintGuide_percent="0.89" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintGuide_percent="0.21" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineScrollBtm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="instructions"
+        android:textAllCaps="true"
+        android:textColor="@color/myORANGE"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/vertical50"
+        app:layout_constraintRight_toRightOf="@id/vertical50"
+        app:layout_constraintTop_toBottomOf="@id/horizontal15" />
+
+    <ScrollView
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/guideline22"
+        app:layout_constraintLeft_toLeftOf="@id/vertical50"
+        app:layout_constraintRight_toRightOf="@id/vertical50"
+        app:layout_constraintTop_toBottomOf="@id/guidelineScroll"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="126dp"
+                android:layout_height="242dp"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:layout_row="0"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button"
+                android:src="@drawable/image" />
+
+            <TextView
+                android:layout_width="156dp"
+                android:layout_height="118dp"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:layout_row="0"
+                android:text="Player moves Joystick in the direction of the WORD shown below the score"
+                android:textColor="@color/myWHITE"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/myBLUE"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="156dp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="5dp"
+                android:text="The joystick moves in the direction YELLOW"/>
+            <TextView
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/myRED"
+                android:layout_width="156dp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:lineSpacingExtra="5dp"
+                android:text="The Bar at the top show how much time is left"/>
+            <TextView
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_marginTop="150dp"
+                android:textColor="@color/myYELLOW"
+                android:layout_width="156dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:lineSpacingExtra="5dp"
+                android:text="Make sure to decide before time runs out!"/>
+
+            <ImageView
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_width="126dp"
+                android:layout_height="242dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/gamepic"
+                android:layout_gravity="center"
+                android:background="@drawable/button"/>
+
+        </GridLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="ok"
+        android:textAllCaps="true"
+        android:textColor="@color/myWHITE"
+        app:layout_constraintBottom_toTopOf="@id/guidelineScrollBtm"
+        app:layout_constraintLeft_toLeftOf="@id/vertical50"
+        app:layout_constraintRight_toRightOf="@id/vertical50" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintGuide_percent="0.83" />
+
+
+    `
+</android.support.constraint.ConstraintLayout>

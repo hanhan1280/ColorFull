@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name = "myRED">#FF2F2F</color>
+    <color name = "myBLUE">#2F67FF</color>
+    <color name = "myYELLOW">#FFE82F</color>
+    <color name = "myGREEN">#1DE549</color>
+    <color name = "myDarkBLUE">#2F333F</color>
+    <color name="myDarkBLUE2">#2b3247</color>
+    <color name = "myLightBLUE">#49ACD5</color>
+    <color name = "myDarkGREEN">#45BC62</color>
+    <color name = "myORANGE">#EAAD43</color>
+    <color name = "myWHITE">#f9fbff</color>
+</resources>
