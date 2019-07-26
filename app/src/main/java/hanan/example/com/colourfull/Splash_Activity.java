@@ -15,9 +15,9 @@ import android.widget.Button;
 public class Splash_Activity extends AppCompatActivity {
     Dialog mDialog;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash_main);
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.splash_main);
         final ConstraintLayout splash = (ConstraintLayout)findViewById(R.id.splash_main);
         hideNavBar();
         Button startbutton = findViewById(R.id.startbutton);
